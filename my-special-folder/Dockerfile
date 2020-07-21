@@ -4,7 +4,7 @@ RUN mkdir -p /my-special-folder
 COPY Dockerfile ./my-special-folder
 
 RUN chgrp -R 0 ./my-special-folder &&\
-	chmond -R g=u ./my-special-folder
+	chmod -R g=u ./my-special-folder
 
 USER 1001
 
